@@ -146,3 +146,76 @@ body {
 }
 
 /* ... (rest of your styles) ... */
+/* ... (existing styles) ... */
+
+.project {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #292929;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+  font-size: 24px;
+  color: #AF9221;
+  margin-bottom: 5px;
+}
+
+.project-date {
+  color: #66bfbf;
+  margin-bottom: 10px;
+}
+
+.project-info {
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.project-skills {
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #AF9221;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.project-link:hover {
+  background-color: #66bfbf;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .project {
+    padding: 15px;
+  }
+
+  .project-title {
+    font-size: 20px;
+  }
+  
+  .project-date {
+    font-size: 14px;
+  }
+  
+  .project-info,
+  .project-skills {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .project-link {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+}
+
+/* ... (rest of your styles) ... */
