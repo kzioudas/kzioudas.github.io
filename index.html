@@ -1,39 +1,207 @@
-!DOCTYPE html
-html lang=en
-head
-  meta charset=UTF-8
-  meta name=viewport content=width=device-width, initial-scale=1.0
-  titleYour Portfoliotitle
-  link rel=stylesheet href=styles.css
-head
-body
-  header
-    h1Your Nameh1
-    pWeb Developerp
-  header
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.cdnfonts.com/css/garet" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#technical-skills">Technical Skills</a></li>
+      <li><a href="#personal-skills">Personal Skills</a></li>
+      <li><a href="#volunteering">Volunteering</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#additional-info">Additional Info</a></li>
+	  <li><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+  <header class="header">
+    <h1 class="name">KONSTANTINOS ZIOUDAS</h1>
+  </header>
   
-  section id=about
-    h2About Meh2
-    pYour bio goes here.p
-  section
+  <section id="about" class="box">
+    <h2 class="section-title">PROFILE</h2>
+    <p class="section-content profile">
+      As a versatile and motivated Computer Science graduand, I have a strong technical background in software development and systems programming. My passion for cybersecurity has led me to complete various certifications and seminars in the field. I am an excellent communicator, team player, and problem solver. I enjoy learning new skills and staying up-to-date with the latest tech and startup news.
+    </p>
+    <p class="section-content">30/01/1998 • Greek • kzioudass@gmail.com • (+30)6986633766 • Giannitsa, Pella, Greece</p>
+  </section>
   
-  section id=portfolio
-    h2Portfolioh2
-    div class=project
-      img src=project1.jpg alt=Project 1
-      h3Project 1h3
-      pProject description here.p
-      a href=#View Projecta
-    div
-    !-- Add more projects here --
-  section
+  <section id="education" class="box">
+    <h2 class="section-title">EDUCATION</h2>
+    <p class="section-content">
+      University of Ioannina • Ioannina, Epirus<br>
+      2016 - Present<br>
+      Undergraduate Student<br>
+      Integrated M.Eng in Computer Science and Engineering<br>
+      Thesis: "Development of Application Programming Interface for Smart-City Data"
+    </p>
+  </section>
   
-  section id=contact
-    h2Contacth2
-    pEmail your@email.comp
-    pPhone (123) 456-7890p
-  section
+  <section id="experience" class="box">
+    <h2 class="section-title">EXPERIENCE</h2>
+    <p class="section-content">
+      Entranet - Simply Talk • Thessaloniki<br>
+      Software Development Intern<br>
+      Jul - Sep 2022<br>
+      Enhanced music search & generation in "Housemate" smart home Android app (Android Studio).<br>
+      Conducted market research & developed new C firmware for older product.<br>
+      Improved "Housemate" smart home package production via Python utility app development.
+    </p>
+  </section>
   
-  script src=script.jsscript
-body
-html
+  <section id="technical-skills" class="box">
+    <h2 class="section-title">TECHNICAL SKILLS</h2>
+    <p class="section-content">
+      Java<br>
+      Python<br>
+      C<br>
+      SQL<br>
+      Cybersecurity<br>
+      Software Development<br>
+      Systems Programming<br>
+      Software-as-a-Service (SaaS)<br>
+      Ruby-on-Rails<br>
+      Rest
+    </p>
+  </section>
+  
+  <section id="personal-skills" class="box">
+    <h2 class="section-title">PERSONAL SKILLS</h2>
+    <p class="section-content">
+      Communication<br>
+      Problem Solving<br>
+      Adaptability<br>
+      Abstract Thinking<br>
+      Conflict resolution<br>
+      Complex Concept Comprehension<br>
+      Thinking Outside-The-Box<br>
+      Social Interaction<br>
+      Teamwork<br>
+      Innovative - Creative
+    </p>
+  </section>
+  
+  <section id="volunteering" class="box">
+    <h2 class="section-title">VOLUNTEERING</h2>
+    <p class="section-content">
+      Epirus Youth Network • Ioannina, Epirus<br>
+      Connections Team<br>
+      Tech and the City University of Ioannina • Ioannina, Epirus<br>
+      Community Team Member<br>
+      TEDx Mavilli Sq • Ioannina, Epirus<br>
+      Volunteer Driver for Event Speakers
+    </p>
+  </section>
+  
+  <section id="certifications" class="box">
+    <h2 class="section-title">CERTIFICATIONS - SEMINARS</h2>
+    <p class="section-content">
+      Introduction to Ethical Hacking • Audax Cybersecurity<br>
+      40hr Seminar on the Basics of Cybersecurity through theoretical and practical knowledge.<br>
+      Ethical-Hacking • Audax Cybersecurity<br>
+      16hr Seminar on the Basics of Ethical Hacking.<br>
+      Android Bug Bounty Hunting: Hunt Like a Rat • CodeRed<br>
+      Learn to set up your mobile lab, develop methodology, and deepen your bug bounty skills.
+    </p>
+  </section>
+  
+  <section id="additional-info" class="box">
+    <h2 class="section-title">ADDITIONAL INFORMATION</h2>
+    <p class="section-content">
+      Student Council Vice President for 4 years<br>
+      Driving License<br>
+      Applicant for Australian Citizenship<br>
+      Military Obligations NOT Fulfilled<br>
+      <a href="linkedin.com/in/kzioudas">linkedin.com/in/kzioudas</a> • (+30)6986633766  •  kzioudass@gmail.com  • <a href="github.com/kzioudas">github.com/kzioudas</a>
+    </p>
+  </section>
+  <section id="projects" class="box">
+  <h2 class="section-title">PROJECTS</h2>
+  
+  <div class="project">
+    <h3 class="project-title">Advanced Text-to-Speech Editor</h3>
+    <p class="project-date">May 2021</p>
+    <p class="project-info">
+      Associated with University of Ioannina<br>
+      The objective of this project is to develop an application that allows to edit and transform documents to audio. The documents may be in various formats. Specifically the application supports at least Microsoft Word (.docx) and Excel documents (.xlsx). For privacy and security reasons the contents of the documents may be encoded with different encoding mechanisms. The target users of the application may be people who have reading problems or visually impaired people. The application consists of a graphical user interface, a back-end that enables the text editing process and the part that transforms text to speech, which will be based on external text to speech libraries.
+    </p>
+    <p class="project-skills">Skills: Scrum · Computer Engineering · Unit Testing · Engineering · Defining Requirements · GitHub · Software Engineers · Computer Science · Java · Object-Oriented Programming (OOP) · Software Development</p>
+    <a class="project-link" href="https://github.com/kzioudas/AdvanceTextToSpeech">Project Link</a>
+  </div>
+
+  <div class="project">
+    <h3 class="project-title">Implementing a log file on the Linux FAT file system</h3>
+    <p class="project-info">
+      Associated with University of Ioannina<br>
+      Extend the FAT file system to the Linux kernel library in order to provide a journaling file that stores all modifications that occur to the file system while running applications.
+    </p>
+    <p class="project-skills">Skills: Computer Engineering · Engineering · Databases · Debugging · Linux · C (Programming Language) · Software Engineers · Computer Science · Software Development</p>
+  </div>
+
+  <div class="project">
+    <h3 class="project-title">Web app for photo sharing in Ruby-on-Rails</h3>
+    <p class="project-info">
+      Associated with University of Ioannina<br>
+      A photo sharing web application allows users to open an account and then log in to the application in order to upload photos to the server and make them accessible to other users. We assume that the accounts are public. Each user can select specific users they wish to follow. When a followed user posts a photo, the following user sees the photo the next time they refresh their page in the application. The photos of the user and the followed users are displayed in reverse chronological order of publication. A user can add comments to a photo they post or to photos of users they follow. Finally, a user can delete a previously posted photo with all its comments.
+    </p>
+    <p class="project-skills">Skills: jQuery · SQL · Computer Engineering · Engineering · Databases · Debugging · Web Development · Software Engineers · Computer Science · Object-Oriented Programming (OOP) · Software Development</p>
+  </div>
+    <div class="project">
+    <h3 class="project-title">Collisions Game</h3>
+    <p class="project-info">
+      Associated with University of Ioannina<br>
+      The Collisions game is a Unity-based game that displays a cube with a sphere inside it. The game allows the user to create smaller objects and clone them randomly using the space bar. These smaller objects can collide with each other, as well as with the cube and the sphere inside it.
+    </p>
+    <p class="project-skills">Skills: Computer Engineering · Engineering · C# · C (Programming Language) · Software Engineers · Computer Science · Software Development</p>
+    <a class="project-link" href="https://github.com/kzioudas/Unity-Project">Project Link</a>
+  </div>
+
+  <div class="project">
+    <h3 class="project-title">DBMS</h3>
+    <p class="project-info">
+      Associated with University of Ioannina<br>
+      Visualization of 50 statistics from 25 different countries (source: WorldBank).
+    </p>
+    <p class="project-skills">Skills: Scrum · SQL · Relational Databases · Computer Engineering · Engineering · Defining Requirements · Databases · GitHub · Software Engineers · Computer Science · Python (Programming Language) · Software Development</p>
+    <a class="project-link" href="https://github.com/alexxarisis/DBMS">Project Link</a>
+  </div>
+
+  <div class="project">
+    <h3 class="project-title">Design of an interactive application aiming at the promotion, preservation and protection of our natural heritage</h3>
+    <p class="project-info">
+      Associated with University of Ioannina<br>
+      Skills: Scrum · Computer Engineering · Engineering · Defining Requirements · C# · Software Engineers · Computer Science · Software Development
+    </p>
+  </div>
+
+  <div class="project">
+    <h3 class="project-title">Developed a utility application written in Python</h3>
+    <p class="project-info">
+      Associated with Entranet - Simply Talk<br>
+      Skills: Computer Engineering · Engineering · Defining Requirements · Debugging · Software Engineers · Computer Science · Python (Programming Language) · Software Development
+    </p>
+  </div>
+
+  <div class="project">
+    <h3 class="project-title">Implementation of a simple multithreaded server key-value pair storage</h3>
+    <p class="project-info">
+      Associated with University of Ioannina<br>
+      Implementation of a simple multithreaded key-value pair storage server. Your software will accept a mixed sequence of key-value pair storage and key lookup requests. It will also maintain statistics on the request service times. The code will be based on the Linux POSIX threads library.
+    </p>
+    <p class="project-skills">Skills: Computer Engineering · Engineering · Debugging · Linux · C (Programming Language) · Software Engineers · Computer Science · Software Development</p>
+  </div>
+
+  <!-- Add more projects similarly -->
+
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
