@@ -191,31 +191,44 @@ body {
   background-color: #66bfbf;
 }
 
-/* Responsive Design */
+//* Responsive Design */
 
 @media (max-width: 768px) {
-  .project {
+  .container {
     padding: 15px;
   }
 
-  .project-title {
-    font-size: 20px;
+  .section-title {
+    font-size: 24px;
   }
-  
-  .project-date {
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  .contact-info {
     font-size: 14px;
   }
-  
-  .project-info,
-  .project-skills {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  .project-link {
-    font-size: 12px;
-    padding: 3px 8px;
-  }
+
+  /* Adjust other element sizes, margins, paddings, fonts, etc. for tablet devices */
 }
 
-/* ... (rest of your styles) ... */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .about-text {
+    font-size: 14px;
+  }
+
+  .contact-info {
+    font-size: 12px;
+  }
+
+  /* Adjust other element sizes, margins, paddings, fonts, etc. for mobile devices */
+}
