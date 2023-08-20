@@ -522,34 +522,65 @@ body {
   .volunteer-name {
     font-size: 16px;
   }
-    /* Education Section */
-    .edu-title {
-      font-size: 20px;
-    }
+  /* Education Section */
+  .edu-title {
+    font-size: 20px;
+  }
   
-    .edu-name,
-    .edu-date,
-    .edu-info {
-      font-size: 14px;
-    }
+  .edu-name,
+  .edu-date,
+  .edu-info {
+    font-size: 14px;
+  }
   
-    /* Experience Section */
-    .exp-title {
-      font-size: 20px;
-    }
+  /* Experience Section */
+  .exp-title {
+    font-size: 20px;
+  }
   
-    .exp-name,
-    .exp-date,
-    .exp-info {
-      font-size: 14px;
-    }
+  .exp-name,
+  .exp-date,
+  .exp-info {
+    font-size: 14px;
+  }
+  
+  /* Display the burger icon and hide the navbar-list */
+  .navbar-list {
+    display: none;
+  }
+
+  .burger-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    /* Styles for the bars in the burger icon */
+  }
+
+  /* Toggle the active class for the navbar-list */
+  .navbar-list.active {
+    display: block;
+  }
+
+  .navbar-list.active .bar:nth-child(1) {
+    /* Styles for the rotated bar */
+  }
+
+  .navbar-list.active .bar:nth-child(2) {
+    /* Styles for the hidden bar */
+  }
+
+  .navbar-list.active .bar:nth-child(3) {
+    /* Styles for the rotated bar */
+  }
 }
 
 /* Apply responsive design for mobile devices */
 @media (max-width: 480px) {
   /* Header */
   .name {
-    font-size: 36px;
+    font-size: 25px;
   }
 
   /* Box */
@@ -620,6 +651,36 @@ body {
   .exp-date,
   .exp-info {
     font-size: 12px;
+  }
+  /* Display the burger icon and hide the navbar-list */
+  .navbar-list {
+    display: none;
+  }
+
+  .burger-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    /* Styles for the bars in the burger icon */
+  }
+
+  /* Toggle the active class for the navbar-list */
+  .navbar-list.active {
+    display: block;
+  }
+
+  .navbar-list.active .bar:nth-child(1) {
+    /* Styles for the rotated bar */
+  }
+
+  .navbar-list.active .bar:nth-child(2) {
+    /* Styles for the hidden bar */
+  }
+
+  .navbar-list.active .bar:nth-child(3) {
+    /* Styles for the rotated bar */
   }
 }
 

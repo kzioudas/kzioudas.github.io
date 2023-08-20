@@ -4,6 +4,15 @@ const projectsList = document.querySelector('.projects-list');
 const themeToggle = document.getElementById('theme-toggle');
 const root = document.documentElement;
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const burgerIcon = document.querySelector(".burger-icon");
+    const navbarList = document.querySelector(".navbar-list");
+  
+    burgerIcon.addEventListener("click", function () {
+      navbarList.classList.toggle("active");
+    });
+});
 themeToggle.addEventListener('click', () => {
     if (root.classList.contains('light-theme')) {
       root.classList.remove('light-theme');
