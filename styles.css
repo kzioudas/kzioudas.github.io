@@ -1,19 +1,85 @@
+/* Dark Theme */
+:root {
+  /* Background Colors  (default)  */
+  --background-color: #121212;
+  --box-background-color: rgba(0, 29, 27, 0.8);
+
+  /* Text Colors */
+  --text-color: #E0E0E0;
+  --section-title-color: #AF9221;
+  --accent-color: #66bfbf;
+  --link-color: #66bfbf;
+  --link-hover-color: #4c8c8c;
+
+  /* Box Shadow */
+  --box-shadow-color: rgba(0, 0, 0, 0.4);
+
+  /* Border Colors */
+  --border-color: #C0C0C0;
+
+  /* Project Box Colors */
+  --project-background-color: #0C0C0C;
+  --project-title-color: #AF9221;
+  --project-info-color: #C0C0C0;
+  --project-skills-color: #C0C0C0;
+  --project-link-bg-color: #AF9221;
+  --project-link-text-color: #E0E0E0;
+  --project-link-hover-bg-color: #66bfbf;
+
+  /* Contact and Social Icons */
+  --social-icon-color: #6AB8B8;
+}
+/* Light Theme*/
+.light-theme {
+  /* Background Colors */
+  --background-color: #F0F0F0;
+  --box-background-color: #FFFFFF;
+
+  /* Text Colors */
+  --text-color: #333333;
+  --section-title-color: #F0A830;
+  --accent-color: #66bfbf;
+  --link-color: #66bfbf;
+  --link-hover-color: #4c8c8c;
+
+  /* Box Shadow */
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+
+  /* Border Colors */
+  --border-color: #C0C0C0;
+
+  /* Project Box Colors */
+  --project-background-color: #F5F5F5;
+  --project-title-color: #F0A830;
+  --project-info-color: #050505;
+  --project-skills-color: #666666;
+  --project-link-bg-color: #F0A830;
+  --project-link-text-color: #FFFFFF;
+  --project-link-hover-bg-color: #66bfbf;
+
+  /* Contact and Social Icons */
+  --social-icon-color: #66bfbf;
+}
 body {
   font-family: 'Garet', sans-serif;
-  background-color: #121212;
-  color: #fff;
+  background-color: var(--background-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
-
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 .header {
   text-align: center;
   padding: 50px 0;
 }
 
 .name {
-  font-size: 48px;
+  font-size: 80px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: lighter;
@@ -22,23 +88,23 @@ body {
 }
 
 .box {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--box-background-color);;
   padding: 20px;
   border-radius: 10px;
   margin: 20px auto;
   width: 70%;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 10px var(--box-shadow-color);
 }
 
 .section-title {
-  color: #AF9221;
+  color: var(--section-title-color);
   text-transform: uppercase;
   font-weight: lighter;
 }
 
 .section-content {
   font-size: 18px;
-  color: #ccc;
+  color: var(--text-color);
 }
 
 .profile {
@@ -55,18 +121,21 @@ body {
 }
 
 .section-content a {
-  color: #66bfbf;
+  color: var(--link-color);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .section-content a:hover {
-  color: #4c8c8c;
+  color: var(--link-hover-color);
 }
 /* ... (existing styles) ... */
 
 .navbar {
-  background-color: #1f1f1f;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color:  #1f1f1f;
   padding: 10px 0;
 }
 
@@ -104,38 +173,38 @@ body {
 .project {
   margin-bottom: 30px;
   padding: 20px;
-  background-color: #292929;
+  background-color: var(--project-background-color);;
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .project-title {
   font-size: 24px;
-  color: #AF9221;
+  color: var(--project-title-color);
   margin-bottom: 5px;
   font-weight: lighter;
 }
 
 .project-date {
-  color: #66bfbf;
+  color: var(--project-info-color);
   margin-bottom: 10px;
 }
 
 .project-info {
-  color: #ddd;
+  color: var(--project-info-color);
   margin-bottom: 15px;
 }
 
 .project-skills {
-  color: #bbb;
+  color: var(--project-skills-color);
   margin-bottom: 15px;
 }
 
 .project-link {
   display: inline-block;
   padding: 5px 10px;
-  background-color: #AF9221;
-  color: #fff;
+  background-color:  var(--project-link-bg-color);
+  color:  var(--project-link-text-color);
   text-decoration: none;
   border-radius: 3px;
   transition: background-color 0.3s;
@@ -148,50 +217,10 @@ body {
 /* ... (rest of your styles) ... */
 /* ... (existing styles) ... */
 
-.project {
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: #292929;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
 
-.project-title {
-  font-size: 24px;
-  color: #AF9221;
-  margin-bottom: 5px;
-}
 
-.project-date {
-  color: #66bfbf;
-  margin-bottom: 10px;
-}
 
-.project-info {
-  color: #ddd;
-  margin-bottom: 15px;
-}
-
-.project-skills {
-  color: #bbb;
-  margin-bottom: 15px;
-}
-
-.project-link {
-  display: inline-block;
-  padding: 5px 10px;
-  background-color: #AF9221;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 3px;
-  transition: background-color 0.3s;
-}
-
-.project-link:hover {
-  background-color: #66bfbf;
-}
-
-//* Responsive Design */
+/* Responsive Design */
 
 @media (max-width: 768px) {
   .container {
@@ -231,4 +260,240 @@ body {
   }
 
   /* Adjust other element sizes, margins, paddings, fonts, etc. for mobile devices */
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Contact Section Styles */
+
+
+
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin-right: 10px;
+  color: var(--section-title-color);
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+}
+
+.cert {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--project-background-color);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cert-title {
+  font-size: 24px;
+  color: var(--section-title-color);
+  margin-bottom: 2px;
+  font-weight: lighter;
+}
+
+.cert-comp {
+  color: var(--project-link-hover-bg-color);
+  margin-bottom: 10px;
+}
+
+.cert-info {
+  color: var(--project-info-color);
+  margin-bottom: 15px;
+}
+
+
+
+.cert-link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #AF9221;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.cert-link:hover {
+  background-color: #66bfbf;
+}
+
+/* Style for the toggle button container */
+.theme-toggle-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style for the toggle button */
+.theme-toggle-button {
+  background-color: var(--project-link-bg-color);
+  color: var(--text-color);
+  border: none;
+  padding: 5px 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle-button:hover {
+  background-color: var(--link-hover-color);
+  color: var(--text-color);
+}
+
+/* Education Section Styles */
+.edu {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--project-background-color);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px var(--box-shadow-color);
+}
+
+.edu-title {
+  font-size: 24px;
+  color: var(--section-title-color);
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+
+.edu-name {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.edu-date {
+  color: var(--border-color);
+  margin-bottom: 10px;
+}
+
+.edu-info {
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+/* Experience Section Styles */
+.exp {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--project-background-color);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px var(--box-shadow-color);
+}
+
+.exp-title {
+  font-size: 24px;
+  color: var(--section-title-color);
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+
+.exp-name {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.exp-date {
+  color: var(--border-color);
+  margin-bottom: 10px;
+}
+
+.exp-info {
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+
+/* Volunteering Section Styles */
+.volunteer {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--project-background-color);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px var(--box-shadow-color);
+}
+
+.volunteer-title {
+  font-size: 24px;
+  color: var(--section-title-color);
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+
+.volunteer-name {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+/* Personal Skills Section Styles */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-top: 1px;
+}
+
+.skill {
+  padding: 10px;
+  background-color: var(--box-background-color);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px var(--box-shadow-color);
+  color: var(--text-color);
+}
+
+/* Floating Skill Projects Window */
+.skill-projects {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-projects-content {
+  background-color: var(--box-background-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px var(--box-shadow-color);
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+  color: var(--text-color);
+}
+
+.skill-projects-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  color: var(--project-title-color);
+}
+
+.projects-list {
+  list-style-type:circle ;
+  padding: 0;
+  margin: 0;
+}
+
+.projects-list-item {
+  margin-bottom: 10px;
 }
