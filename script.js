@@ -4,7 +4,6 @@ const projectsList = document.querySelector('.projects-list');
 const themeToggle = document.getElementById('theme-toggle');
 const root = document.documentElement;
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const burgerIcon = document.querySelector(".burger-icon");
     const navbarList = document.querySelector(".navbar-list");

@@ -2,7 +2,7 @@
 :root {
   /* Background Colors  (default)  */
   --background-color: #121212;
-  --box-background-color: rgba(0, 29, 27, 0.8);
+  --box-background-color: rgba(23, 23, 23, 0.616);
 
   /* Text Colors */
   --text-color: #E0E0E0;
@@ -83,9 +83,13 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: lighter;
-  text-align: center;
-  margin-top: 0;
+  margin: 0;
+  transition: font-size 0.3s, margin-left 0.3s;
 }
+
+
+
+
 
 .box {
   background-color: var(--box-background-color);;
@@ -130,12 +134,28 @@ body {
   color: var(--link-hover-color);
 }
 /* ... (existing styles) ... */
+/* Styles for the burger icon */
+.burger-icon {
+  display: none; /* Hide the burger icon by default */
+}
 
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Toggle the active class for the navbar-list */
+.navbar-list.active {
+  display: block;
+}
 .navbar {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color:  #1f1f1f;
+  background-color: rgba(31, 31, 31, 0.8);;
   padding: 10px 0;
 }
 
@@ -413,7 +433,7 @@ body {
 
 .skill {
   padding: 10px;
-  background-color: var(--box-background-color);
+  background-color: var(--project-background-color);
   border-radius: 5px;
   box-shadow: 0px 2px 5px var(--box-shadow-color);
   color: var(--text-color);
