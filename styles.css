@@ -222,45 +222,7 @@ body {
 
 /* Responsive Design */
 
-@media (max-width: 768px) {
-  .container {
-    padding: 15px;
-  }
 
-  .section-title {
-    font-size: 24px;
-  }
-
-  .about-text {
-    font-size: 16px;
-  }
-
-  .contact-info {
-    font-size: 14px;
-  }
-
-  /* Adjust other element sizes, margins, paddings, fonts, etc. for tablet devices */
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 10px;
-  }
-
-  .section-title {
-    font-size: 20px;
-  }
-
-  .about-text {
-    font-size: 14px;
-  }
-
-  .contact-info {
-    font-size: 12px;
-  }
-
-  /* Adjust other element sizes, margins, paddings, fonts, etc. for mobile devices */
-}
 
 .social-links {
   display: flex;
@@ -497,3 +459,175 @@ body {
 .projects-list-item {
   margin-bottom: 10px;
 }
+
+
+
+
+/* Existing styles... */
+
+/* Responsive Design */
+
+/* Apply responsive design for tablet devices */
+@media (max-width: 768px) {
+  /* Header */
+  .name {
+    font-size: 48px;
+  }
+
+  /* Box */
+  .box {
+    width: 90%;
+  }
+
+  /* Section title */
+  .section-title {
+    font-size: 24px;
+  }
+
+  /* Section content */
+  .section-content {
+    font-size: 16px;
+  }
+
+  /* Project title */
+  .project-title {
+    font-size: 20px;
+  }
+
+  /* Project date */
+  .project-date {
+    font-size: 14px;
+  }
+
+  /* Project info */
+  .project-info,
+  .project-skills {
+    font-size: 14px;
+  }
+
+  /* Social icon size */
+  .social-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  /* Volunteer and skill title */
+  .volunteer-title,
+  .skill {
+    font-size: 20px;
+  }
+
+  /* Volunteer and skill name */
+  .volunteer-name {
+    font-size: 16px;
+  }
+    /* Education Section */
+    .edu-title {
+      font-size: 20px;
+    }
+  
+    .edu-name,
+    .edu-date,
+    .edu-info {
+      font-size: 14px;
+    }
+  
+    /* Experience Section */
+    .exp-title {
+      font-size: 20px;
+    }
+  
+    .exp-name,
+    .exp-date,
+    .exp-info {
+      font-size: 14px;
+    }
+}
+
+/* Apply responsive design for mobile devices */
+@media (max-width: 480px) {
+  /* Header */
+  .name {
+    font-size: 36px;
+  }
+
+  /* Box */
+  .box {
+    width: 95%;
+  }
+
+  /* Section title */
+  .section-title {
+    font-size: 20px;
+  }
+
+  /* Section content */
+  .section-content {
+    font-size: 14px;
+  }
+
+  /* Project title */
+  .project-title {
+    font-size: 18px;
+  }
+
+  /* Project date */
+  .project-date {
+    font-size: 12px;
+  }
+
+  /* Project info */
+  .project-info,
+  .project-skills {
+    font-size: 12px;
+  }
+
+  /* Social icon size */
+  .social-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+  }
+
+  /* Volunteer and skill title */
+  .volunteer-title,
+  .skill {
+    font-size: 18px;
+  }
+
+  /* Volunteer and skill name */
+  .volunteer-name {
+    font-size: 14px;
+  }
+
+  .edu-title {
+    font-size: 18px;
+  }
+
+  .edu-name,
+  .edu-date,
+  .edu-info {
+    font-size: 12px;
+  }
+
+  /* Experience Section */
+  .exp-title {
+    font-size: 18px;
+  }
+
+  .exp-name,
+  .exp-date,
+  .exp-info {
+    font-size: 12px;
+  }
+}
+
+/* Floating Skill Projects Window */
+.skill-projects-content {
+  /* ... (existing styles) ... */
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* ... (other responsive styles) ... */
