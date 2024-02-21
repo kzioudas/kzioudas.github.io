@@ -1,0 +1,714 @@
+/* Dark Theme */
+:root {
+  /* Background Colors  (default)  */
+  --background-color: #121212;
+  --box-background-color: rgba(0, 29, 27, 0.8);
+
+  /* Text Colors */
+  --text-color: #E0E0E0;
+  --section-title-color: #AF9221;
+  --accent-color: #66bfbf;
+  --link-color: #66bfbf;
+  --link-hover-color: #4c8c8c;
+
+  /* Box Shadow */
+  --box-shadow-color: rgba(0, 0, 0, 0.4);
+
+  /* Border Colors */
+  --border-color: #C0C0C0;
+
+  /* Project Box Colors */
+  --project-background-color: #0C0C0C;
+  --project-title-color: #AF9221;
+  --project-info-color: #C0C0C0;
+  --project-skills-color: #C0C0C0;
+  --project-link-bg-color: #AF9221;
+  --project-link-text-color: #E0E0E0;
+  --project-link-hover-bg-color: #66bfbf;
+
+  /* Contact and Social Icons */
+  --social-icon-color: #6AB8B8;
+}
+/* Light Theme*/
+.light-theme {
+  /* Background Colors */
+  --background-color: #F0F0F0;
+  --box-background-color: #FFFFFF;
+
+  /* Text Colors */
+  --text-color: #333333;
+  --section-title-color: #F0A830;
+  --accent-color: #66bfbf;
+  --link-color: #66bfbf;
+  --link-hover-color: #4c8c8c;
+
+  /* Box Shadow */
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+
+  /* Border Colors */
+  --border-color: #C0C0C0;
+
+  /* Project Box Colors */
+  --project-background-color: #F5F5F5;
+  --project-title-color: #F0A830;
+  --project-info-color: #050505;
+  --project-skills-color: #666666;
+  --project-link-bg-color: #F0A830;
+  --project-link-text-color: #FFFFFF;
+  --project-link-hover-bg-color: #66bfbf;
+
+  /* Contact and Social Icons */
+  --social-icon-color: #66bfbf;
+}
+body {
+  font-family: 'Garet', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.header {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.name {
+  font-size: 80px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  margin: 0;
+  transition: font-size 0.3s, margin-left 0.3s;
+}
+
+
+
+
+
+.box {
+  background-color: var(--box-background-color);;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 70%;
+  box-shadow: 0px 4px 10px var(--box-shadow-color);
+}
+
+.section-title {
+  color: var(--section-title-color);
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.section-content {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.profile {
+  font-weight: lighter;
+}
+
+.skills-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+}
+
+.section-content a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.section-content a:hover {
+  color: var(--link-hover-color);
+}
+/* ... (existing styles) ... */
+/* Styles for the burger icon */
+.burger-icon {
+  display: none; /* Hide the burger icon by default */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Toggle the active class for the navbar-list */
+.navbar-list.active {
+  display: block;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(31, 31, 31, 0.8);;
+  padding: 10px 0;
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.navbar-list li {
+  margin-right: 20px;
+}
+
+.navbar-list li:last-child {
+  margin-right: 0;
+}
+
+.navbar-list a {
+  font-family: 'Garet', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #AF9221;
+  font-weight: lighter;
+  transition: color 0.3s;
+}
+
+.navbar-list a:hover {
+  color: #66bfbf;
+}
+
+/* ... (rest of your styles) ... */
+/* ... (existing styles) ... */
+
+.project {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--project-background-color);;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+  font-size: 24px;
+  color: var(--project-title-color);
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+
+.project-date {
+  color: var(--project-info-color);
+  margin-bottom: 10px;
+}
+
+.project-info {
+  color: var(--project-info-color);
+  margin-bottom: 15px;
+}
+
+.project-skills {
+  color: var(--project-skills-color);
+  margin-bottom: 15px;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color:  var(--project-link-bg-color);
+  color:  var(--project-link-text-color);
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.project-link:hover {
+  background-color: #66bfbf;
+}
+
+/* ... (rest of your styles) ... */
+/* ... (existing styles) ... */
+
+
+
+
+/* Responsive Design */
+
+
+
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Contact Section Styles */
+
+
+
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin-right: 10px;
+  color: var(--section-title-color);
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+}
+
+.cert {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--project-background-color);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cert-title {
+  font-size: 24px;
+  color: var(--section-title-color);
+  margin-bottom: 2px;
+  font-weight: lighter;
+}
+
+.cert-comp {
+  color: var(--project-link-hover-bg-color);
+  margin-bottom: 10px;
+}
+
+.cert-info {
+  color: var(--project-info-color);
+  margin-bottom: 15px;
+}
+
+
+
+.cert-link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #AF9221;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.cert-link:hover {
+  background-color: #66bfbf;
+}
+
+/* Style for the toggle button container */
+.theme-toggle-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style for the toggle button */
+.theme-toggle-button {
+  background-color: var(--project-link-bg-color);
+  color: var(--text-color);
+  border: none;
+  padding: 5px 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle-button:hover {
+  background-color: var(--link-hover-color);
+  color: var(--text-color);
+}
+
+/* Education Section Styles */
+.edu {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--project-background-color);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px var(--box-shadow-color);
+}
+
+.edu-title {
+  font-size: 24px;
+  color: var(--section-title-color);
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+
+.edu-name {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.edu-date {
+  color: var(--border-color);
+  margin-bottom: 10px;
+}
+
+.edu-info {
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+/* Experience Section Styles */
+.exp {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--project-background-color);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px var(--box-shadow-color);
+}
+
+.exp-title {
+  font-size: 24px;
+  color: var(--section-title-color);
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+
+.exp-name {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.exp-date {
+  color: var(--border-color);
+  margin-bottom: 10px;
+}
+
+.exp-info {
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+
+/* Volunteering Section Styles */
+.volunteer {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--project-background-color);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px var(--box-shadow-color);
+}
+
+.volunteer-title {
+  font-size: 24px;
+  color: var(--section-title-color);
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+
+.volunteer-name {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+/* Personal Skills Section Styles */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-top: 1px;
+}
+
+.skill {
+  padding: 10px;
+  background-color: var(--project-background-color);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px var(--box-shadow-color);
+  color: var(--text-color);
+}
+
+/* Floating Skill Projects Window */
+.skill-projects {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-projects-content {
+  background-color: var(--box-background-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px var(--box-shadow-color);
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+  color: var(--text-color);
+}
+
+.skill-projects-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  color: var(--project-title-color);
+}
+
+.projects-list {
+  list-style-type:circle ;
+  padding: 0;
+  margin: 0;
+}
+
+.projects-list-item {
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Existing styles... */
+
+/* Responsive Design */
+
+/* Apply responsive design for tablet devices */
+@media (max-width: 768px) {
+  /* Header */
+  .name {
+    font-size: 48px;
+  }
+
+  /* Box */
+  .box {
+    width: 90%;
+  }
+
+  /* Section title */
+  .section-title {
+    font-size: 24px;
+  }
+
+  /* Section content */
+  .section-content {
+    font-size: 16px;
+  }
+
+  /* Project title */
+  .project-title {
+    font-size: 20px;
+  }
+
+  /* Project date */
+  .project-date {
+    font-size: 14px;
+  }
+
+  /* Project info */
+  .project-info,
+  .project-skills {
+    font-size: 14px;
+  }
+
+  /* Social icon size */
+  .social-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  /* Volunteer and skill title */
+  .volunteer-title,
+  .skill {
+    font-size: 20px;
+  }
+
+  /* Volunteer and skill name */
+  .volunteer-name {
+    font-size: 16px;
+  }
+  /* Education Section */
+  .edu-title {
+    font-size: 20px;
+  }
+  
+  .edu-name,
+  .edu-date,
+  .edu-info {
+    font-size: 14px;
+  }
+  
+  /* Experience Section */
+  .exp-title {
+    font-size: 20px;
+  }
+  
+  .exp-name,
+  .exp-date,
+  .exp-info {
+    font-size: 14px;
+  }
+  
+  /* Display the burger icon and hide the navbar-list */
+  .navbar-list {
+    display: none;
+  }
+
+  .burger-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    /* Styles for the bars in the burger icon */
+  }
+
+  /* Toggle the active class for the navbar-list */
+  .navbar-list.active {
+    display: block;
+  }
+
+  .navbar-list.active .bar:nth-child(1) {
+    /* Styles for the rotated bar */
+  }
+
+  .navbar-list.active .bar:nth-child(2) {
+    /* Styles for the hidden bar */
+  }
+
+  .navbar-list.active .bar:nth-child(3) {
+    /* Styles for the rotated bar */
+  }
+}
+
+/* Apply responsive design for mobile devices */
+@media (max-width: 480px) {
+  /* Header */
+  .name {
+    font-size: 25px;
+  }
+
+  /* Box */
+  .box {
+    width: 95%;
+  }
+
+  /* Section title */
+  .section-title {
+    font-size: 20px;
+  }
+
+  /* Section content */
+  .section-content {
+    font-size: 14px;
+  }
+
+  /* Project title */
+  .project-title {
+    font-size: 18px;
+  }
+
+  /* Project date */
+  .project-date {
+    font-size: 12px;
+  }
+
+  /* Project info */
+  .project-info,
+  .project-skills {
+    font-size: 12px;
+  }
+
+  /* Social icon size */
+  .social-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+  }
+
+  /* Volunteer and skill title */
+  .volunteer-title,
+  .skill {
+    font-size: 18px;
+  }
+
+  /* Volunteer and skill name */
+  .volunteer-name {
+    font-size: 14px;
+  }
+
+  .edu-title {
+    font-size: 18px;
+  }
+
+  .edu-name,
+  .edu-date,
+  .edu-info {
+    font-size: 12px;
+  }
+
+  /* Experience Section */
+  .exp-title {
+    font-size: 18px;
+  }
+
+  .exp-name,
+  .exp-date,
+  .exp-info {
+    font-size: 12px;
+  }
+  /* Display the burger icon and hide the navbar-list */
+  .navbar-list {
+    display: none;
+  }
+
+  .burger-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    /* Styles for the bars in the burger icon */
+  }
+
+  /* Toggle the active class for the navbar-list */
+  .navbar-list.active {
+    display: block;
+  }
+
+  .navbar-list.active .bar:nth-child(1) {
+    /* Styles for the rotated bar */
+  }
+
+  .navbar-list.active .bar:nth-child(2) {
+    /* Styles for the hidden bar */
+  }
+
+  .navbar-list.active .bar:nth-child(3) {
+    /* Styles for the rotated bar */
+  }
+}
+
+/* Floating Skill Projects Window */
+.skill-projects-content {
+  /* ... (existing styles) ... */
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* ... (other responsive styles) ... */
