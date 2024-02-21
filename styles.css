@@ -48,7 +48,7 @@
   --background-image: url('image.jpg');
   /* Text Colors */
   --text-color: #333333;
-  --section-title-color: #F0A830;
+  --section-title-color: #1557d2;
   --accent-color: #66bfbf;
   --link-color: #66bfbf;
   --link-hover-color: #4c8c8c;
@@ -61,15 +61,15 @@
 
   /* Project Box Colors */
   --project-background-color: #f5f5f5bf;
-  --project-title-color: #F0A830;
+  --project-title-color: #1557d2;
   --project-info-color: #050505;
   --project-skills-color: #666666;
-  --project-link-bg-color: #F0A830;
+  --project-link-bg-color: #1557d2;
   --project-link-text-color: #FFFFFF;
   --project-link-hover-bg-color: #66bfbf;
 
   /* Contact and Social Icons */
-  --social-icon-color: #66bfbf;
+  --social-icon-color: #1557d2;
 }
 
 /* Define the animation for sliding in from the left */
@@ -238,12 +238,12 @@ body {
 
 .social-links a {
   margin-right: 10px;
-  color: var(--section-title-color);
+  color: var(--social-icon-color);
   transition: color 0.3s;
 }
 
 .social-links a:hover {
-  color: var(--accent-color);
+  color: var(--social-icon-color);
 }
 
 .profile {
